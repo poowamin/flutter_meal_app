@@ -11,7 +11,7 @@ class MealDetailScreen extends StatelessWidget {
         vertical: 10,
       ),
       child: Text(
-        'Ingredeints',
+        text,
         style: TextStyle(
           fontSize: 20,
           fontFamily: 'Raleway',
@@ -94,6 +94,14 @@ class MealDetailScreen extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(
+          Icons.delete,
+        ),
+        onPressed: () {
+          Navigator.of(context).pop(mealId);
+        },
       ),
     );
   }
