@@ -78,10 +78,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'DeliMeals',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
-        accentColor: Colors.amber,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
-        fontFamily: 'Raleway',
+        fontFamily: 'Raleway', colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.pink).copyWith(secondary: Colors.amber),
       ),
       // home: CategoriesScreen(),
       initialRoute: '/',
